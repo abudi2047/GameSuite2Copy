@@ -8,7 +8,7 @@ import android.widget.Button
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+        super.onCreate(savedInstanceState) //
         setContentView(R.layout.activity_main) // Set it to the main activity layout
 
         val btnTicTacToe: Button = findViewById(R.id.btnTicTacToe)
@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         btnTicTacToe.setOnClickListener {
             startActivity(Intent(this, TicTacToeActivity::class.java))
         }
+        //test for github
 
         val btnFindThePair = findViewById<Button>(R.id.btnFindThePair)
         btnFindThePair.setOnClickListener {
